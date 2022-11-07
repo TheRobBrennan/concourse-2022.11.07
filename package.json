@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/TheRobBrennan/concourse-2022.11.07/issues"
   },
-  "homepage": "https://github.com/TheRobBrennan/concourse-2022.11.07#readme"
+  "homepage": "https://github.com/TheRobBrennan/concourse-2022.11.07#readme",
+  "dependencies": {
+    "next": "^13.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }

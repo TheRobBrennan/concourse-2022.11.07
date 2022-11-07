@@ -1,6 +1,7 @@
 {
   "version": "0.2.0",
   "configurations": [
+    // Source - https://nextjs.org/docs/advanced-features/debugging
     {
       "name": "Next.js: debug server-side",
       "type": "node-terminal",

@@ -11,6 +11,21 @@ export async function getStaticPaths() {
   const paths = getAllPostIds();
   return {
     paths,
+    //  If fallback is true, then the behavior of getStaticProps changes:
+    //
+    //    - The paths returned from getStaticPaths will be rendered to HTML at build time.
+    //    - The paths that have not been generated at build time will not result in a 404 page.
+    //      Instead, Next.js will serve a “fallback” version of the page on the first request to
+    //      such a path.
+    //    - In the background, Next.js will statically generate the requested path. Subsequent requests
+    //      to the same path will serve the generated page, just like other pages pre-rendered at
+    //      build time.
+    //
+    //  If fallback is blocking, then new paths will be server-side rendered with getStaticProps,
+    //  and cached for future requests so it only happens once per path.
+    //
+    //  See https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-false
+
     fallback: false,
   };
 }

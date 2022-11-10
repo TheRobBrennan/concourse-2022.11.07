@@ -6,6 +6,17 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 
 export async function getStaticProps() {
+  //  getStaticProps only runs on the server-side. It will never run on the client-side.
+  //  It won’t even be included in the JS bundle for the browser.
+  //  That means you can write code such as direct database queries without them being sent to browsers.
+  //
+  //  Because it’s meant to be run at build time, you won’t be able to use data that’s only available
+  //  during request time, such as query parameters or HTTP headers.
+  //
+  //  getStaticProps can only be exported from a page. You can’t export it from non-page files.
+  //  One of the reasons for this restriction is that React needs to have all the required data
+  //  before the page is rendered.
+
   const allPostsData = getSortedPostsData();
   return {
     props: {

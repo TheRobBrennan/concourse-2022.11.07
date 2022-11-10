@@ -1,3 +1,5 @@
+//  [id].js handles specific routes - a filename of [...id].js would handle catch all routes
+//  See https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes
 import Head from "next/head";
 import Layout from "../../components/layout";
 import Date from "../../components/date";

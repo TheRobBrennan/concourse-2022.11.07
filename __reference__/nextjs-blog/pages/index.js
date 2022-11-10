@@ -25,6 +25,7 @@ export async function getStaticProps() {
   };
 }
 
+// Server-side rendering
 // export async function getServerSideProps(context) {
 //   //  To use server-side rendering, we would need to use getServerSideProps
 //   //  Because getServerSideProps is called at request time, its parameter (context) contains
@@ -41,6 +42,29 @@ export async function getStaticProps() {
 //     },
 //   };
 // }
+
+//  Client-side rendering
+//
+//  You can also pre-render without data and then load the data on the client-side.
+//  This approach works well for user dashboard pages, for example. Because a dashboard is
+//  a private, user-specific page, SEO is not relevant, and the page doesn’t need to
+//  be pre-rendered. The data is frequently updated, which requires request-time data fetching.
+//
+//  The team behind Next.js has created a React hook for data fetching called SWR. We highly
+//  recommend it if you’re fetching data on the client side. It handles caching,
+//  revalidation, focus tracking, refetching on interval, and more. We won’t cover the
+//  details here, but here’s an example usage:
+/*
+  import useSWR from 'swr';
+
+  function Profile() {
+    const { data, error } = useSWR('/api/user', fetch);
+
+    if (error) return <div>failed to load</div>;
+    if (!data) return <div>loading...</div>;
+    return <div>hello {data.name}!</div>;
+  }
+  */
 
 export default function Home({ allPostsData }) {
   return (

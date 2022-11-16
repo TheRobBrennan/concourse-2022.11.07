@@ -9,6 +9,26 @@
       "url": "http://localhost:3000"
     },
 
+    // Neo4j, GraphQL, and Next.js - https://neo4j.com/docs/graphql-manual/current/guides/frameworks/nextjs/
+    {
+      "name": "Neo4j, GraphQL, and Next.js: debug full stack",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "cd __reference__/neo4j-graphql-nextjs && npm run dev",
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "started server on .+, url: (https?://.+)",
+        "uriFormat": "%s",
+        "action": "debugWithChrome"
+      }
+    },
+    {
+      "name": "Neo4j, GraphQL, and Next.js: debug server-side",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "cd __reference__/neo4j-graphql-nextjs && npm run dev"
+    },
+
     // Next.js: Getting Started - https://nextjs.org/docs
     {
       "name": "Next.js Blog: debug full stack",

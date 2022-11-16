@@ -3,7 +3,7 @@
   "configurations": [
     // Next.js: Neo4j, GraphQL, and Next.js - https://neo4j.com/docs/graphql-manual/current/guides/frameworks/nextjs/
     {
-      "name": "Neo4j, GraphQL, and Next.js: debug full stack",
+      "name": "Next.js - Neo4j, GraphQL, and Next.js: debug full stack",
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run dev",
@@ -18,7 +18,7 @@
 
     // Next.js: Blog (Getting Started) - https://nextjs.org/docs
     {
-      "name": "Next.js Blog: debug full stack",
+      "name": "Next.js - Blog: debug full stack",
       "type": "node-terminal",
       "request": "launch",
       "cwd": "${workspaceFolder}/__reference__/nextjs-blog",
@@ -33,7 +33,7 @@
 
     // Next.js example with Neo4j - https://github.com/vercel/next.js/tree/canary/examples/with-neo4j
     {
-      "name": "Next.js with Neo4j: debug full stack",
+      "name": "Next.js - Example with Neo4j: debug full stack",
       "type": "node-terminal",
       "request": "launch",
       "cwd": "${workspaceFolder}/__reference__/with-neo4j-app",
@@ -48,7 +48,7 @@
 
     // [DEPRECATED] Next.js example with Apollo, Neo4j, and GraphQL - https://github.com/vercel/next.js/tree/canary/examples/with-apollo-neo4j-graphql
     {
-      "name": "DEPRECATED - Next.js with Apollo, Neo4j, and GraphQL: debug full stack",
+      "name": "DEPRECATED - Next.js - Example with Apollo, Neo4j, and GraphQL: debug full stack",
       "type": "node-terminal",
       "request": "launch",
       "cwd": "${workspaceFolder}/__reference__/with-apollo-neo4j-graphql-app",

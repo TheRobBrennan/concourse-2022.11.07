@@ -1,7 +1,7 @@
 # Neo4j Example with GraphQL and Apollo
 
-\*\*DEPRECATED!!! This is using a library that is no longer supported. On the upside, Neo4j does have their
-This is a simple set up for Next using Neo4j Database with GraphQL and Apollo. Neo4j's Movies dataset example is used to run the example.
+**DEPRECATED!!! This is using a library that is no longer supported. On the upside, Neo4j does have their
+This is a simple set up for Next using Neo4j Database with GraphQL and Apollo. Neo4j's Movies dataset example is used to run the example.**
 
 ## Deploy your own
 

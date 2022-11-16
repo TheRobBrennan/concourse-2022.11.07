@@ -49,9 +49,9 @@
       "command": "cd __reference__/with-neo4j-app && npm run dev"
     },
 
-    // Next.js example with Apollo, Neo4j, and GraphQL - https://github.com/vercel/next.js/tree/canary/examples/with-apollo-neo4j-graphql
+    // [DEPRECATED] Next.js example with Apollo, Neo4j, and GraphQL - https://github.com/vercel/next.js/tree/canary/examples/with-apollo-neo4j-graphql
     {
-      "name": "Next.js with Apollo, Neo4j, and GraphQL: debug full stack",
+      "name": "DEPRECATED - Next.js with Apollo, Neo4j, and GraphQL: debug full stack",
       "type": "node-terminal",
       "request": "launch",
       "command": "cd __reference__/with-apollo-neo4j-graphql-app && npm run dev",
@@ -63,7 +63,7 @@
       }
     },
     {
-      "name": "Next.js with Apollo, Neo4j, and GraphQL: debug server-side",
+      "name": "DEPRECATED - Next.js with Apollo, Neo4j, and GraphQL: debug server-side",
       "type": "node-terminal",
       "request": "launch",
       "command": "cd __reference__/with-apollo-neo4j-graphql-app && npm run dev"

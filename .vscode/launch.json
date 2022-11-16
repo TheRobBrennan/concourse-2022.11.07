@@ -1,52 +1,34 @@
 {
   "version": "0.2.0",
   "configurations": [
-    // Source - https://nextjs.org/docs/advanced-features/debugging
-    {
-      "name": "Next.js: debug client-side",
-      "type": "pwa-chrome",
-      "request": "launch",
-      "url": "http://localhost:3000"
-    },
-
-    // Neo4j, GraphQL, and Next.js - https://neo4j.com/docs/graphql-manual/current/guides/frameworks/nextjs/
+    // Next.js: Neo4j, GraphQL, and Next.js - https://neo4j.com/docs/graphql-manual/current/guides/frameworks/nextjs/
     {
       "name": "Neo4j, GraphQL, and Next.js: debug full stack",
       "type": "node-terminal",
       "request": "launch",
-      "command": "cd __reference__/neo4j-graphql-nextjs && npm run dev",
+      "command": "npm run dev",
+      "cwd": "${workspaceFolder}/__reference__/neo4j-graphql-nextjs",
       "console": "integratedTerminal",
       "serverReadyAction": {
         "pattern": "started server on .+, url: (https?://.+)",
         "uriFormat": "%s",
         "action": "debugWithChrome"
-      }
-    },
-    {
-      "name": "Neo4j, GraphQL, and Next.js: debug server-side",
-      "type": "node-terminal",
-      "request": "launch",
-      "command": "cd __reference__/neo4j-graphql-nextjs && npm run dev"
+      },
     },
 
-    // Next.js: Getting Started - https://nextjs.org/docs
+    // Next.js: Blog (Getting Started) - https://nextjs.org/docs
     {
       "name": "Next.js Blog: debug full stack",
       "type": "node-terminal",
       "request": "launch",
-      "command": "cd __reference__/nextjs-blog && npm run dev",
+      "cwd": "${workspaceFolder}/__reference__/nextjs-blog",
+      "command": "npm run dev",
       "console": "integratedTerminal",
       "serverReadyAction": {
         "pattern": "started server on .+, url: (https?://.+)",
         "uriFormat": "%s",
         "action": "debugWithChrome"
       }
-    },
-    {
-      "name": "Next.js Blog: debug server-side",
-      "type": "node-terminal",
-      "request": "launch",
-      "command": "cd __reference__/nextjs-blog && npm run dev"
     },
 
     // Next.js example with Neo4j - https://github.com/vercel/next.js/tree/canary/examples/with-neo4j
@@ -54,19 +36,14 @@
       "name": "Next.js with Neo4j: debug full stack",
       "type": "node-terminal",
       "request": "launch",
-      "command": "cd __reference__/with-neo4j-app && npm run dev",
+      "cwd": "${workspaceFolder}/__reference__/with-neo4j-app",
+      "command": "npm run dev",
       "console": "integratedTerminal",
       "serverReadyAction": {
         "pattern": "started server on .+, url: (https?://.+)",
         "uriFormat": "%s",
         "action": "debugWithChrome"
       }
-    },
-    {
-      "name": "Next.js with Neo4j: debug server-side",
-      "type": "node-terminal",
-      "request": "launch",
-      "command": "cd __reference__/with-neo4j-app && npm run dev"
     },
 
     // [DEPRECATED] Next.js example with Apollo, Neo4j, and GraphQL - https://github.com/vercel/next.js/tree/canary/examples/with-apollo-neo4j-graphql
@@ -74,19 +51,14 @@
       "name": "DEPRECATED - Next.js with Apollo, Neo4j, and GraphQL: debug full stack",
       "type": "node-terminal",
       "request": "launch",
-      "command": "cd __reference__/with-apollo-neo4j-graphql-app && npm run dev",
+      "cwd": "${workspaceFolder}/__reference__/with-apollo-neo4j-graphql-app",
+      "command": "npm run dev",
       "console": "integratedTerminal",
       "serverReadyAction": {
         "pattern": "started server on .+, url: (https?://.+)",
         "uriFormat": "%s",
         "action": "debugWithChrome"
       }
-    },
-    {
-      "name": "DEPRECATED - Next.js with Apollo, Neo4j, and GraphQL: debug server-side",
-      "type": "node-terminal",
-      "request": "launch",
-      "command": "cd __reference__/with-apollo-neo4j-graphql-app && npm run dev"
     },
   ]
 }
